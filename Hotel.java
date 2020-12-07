@@ -18,7 +18,7 @@ class Hotel {
                 for (int a = 0; a < 6; ++a) // across
                 {
                     Random r = new Random();
-                    int rInt = r.nextInt((3-1)+1)+1;
+                    int rInt = r.nextInt((3-1)+1)+1;//Generate random int between 1-3 to determine if room is booked or not
                     if (rInt < 3) {
                         rooms[d][a][u] = (a + 1) + d * 6 + u * 30; // Room Count across, down, then up
                     } else {
