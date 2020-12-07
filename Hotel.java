@@ -53,7 +53,7 @@ class Hotel {
                 for (int a = 0; a < 6; ++a) // across
                 {
                     if (rooms[d][a][u] < 10) {
-                        if(rooms[d][a][u] == 0){
+                        if(rooms[d][a][u] == 0){ //If the room is occupied then set the print output to --
                             System.out.print(" --");
                         }else{
                             System.out.printf(" 0%d", rooms[d][a][u]); // Print across, up, then down
